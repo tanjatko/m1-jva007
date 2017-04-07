@@ -11,7 +11,8 @@ public class T5_TanksMoveToQuadrant extends JPanel
     void runTheGame()
     {
 
-        moveToQuadrant("F9");
+        moveToQuadrant("D6");
+        moveToQuadrant("A2");
     }
 
     /**

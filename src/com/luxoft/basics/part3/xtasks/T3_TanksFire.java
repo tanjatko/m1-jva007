@@ -51,6 +51,7 @@ public class T3_TanksFire extends JPanel
         }
     }
 
+
     /**
      *
      * When called tank should produce new bullet.
@@ -63,7 +64,7 @@ public class T3_TanksFire extends JPanel
      */
     void fire()
     {
-        // TODO YOUR CODE HERE
+
     }
 
     private void printCurrentBattleField()
@@ -104,7 +105,7 @@ public class T3_TanksFire extends JPanel
     {
         JFrame frame = new JFrame("YOUR TANK SHOULD FIRE!!!");
         frame.setLocation(750, 150);
-        frame.setMinimumSize(new Dimension(BF_WIDTH, BF_HEIGHT + 22));
+        frame.setMinimumSize(new Dimension(BF_WIDTH+18, BF_HEIGHT + 40));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.getContentPane().add(this);
         frame.pack();

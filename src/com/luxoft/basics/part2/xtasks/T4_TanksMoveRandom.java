@@ -70,6 +70,7 @@ public class T4_TanksMoveRandom extends JPanel
         sleep(70);
     }
 
+
     void slowMove(char dir, char coordinate) {
 
         int counter = 0;
