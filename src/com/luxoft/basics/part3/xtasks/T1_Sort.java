@@ -24,7 +24,15 @@ public class T1_Sort
      */
     public static void sortAsc(int[] data)
     {
-        // TODO YOUR CODE HERE
+       for(int j=0; j<(data.length-1);j++)
+       {
+           for (int i = 0; i < (data.length - 1); i++) {
+               if (data[i] > data[i + 1])
+                   swap(data, i, i + 1);
+           }
+           System.out.println(Arrays.toString(data));
+       }
+
     }
 
 
@@ -35,6 +43,8 @@ public class T1_Sort
      */
     public static void swap(int[] data, int idx1, int idx2)
     {
-        // TODO SHOULD BE ALREADY IMPLEMENTED
+        int x =data[idx1];
+        data[idx1]=data[idx2];
+        data[idx2]=x;
     }
 }

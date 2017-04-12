@@ -1,21 +1,20 @@
 package com.luxoft.basics.part3.xtasks;
 
+import java.util.Arrays;
+
 public class T2_BattleField
 {
 
-    /**
-     * TODO PUT YOUR DESIGN HERE
-     */
     String[][] battleField = {
             {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", "T", "E", " ", " ", " ", " "}
+            {" ", "B", " ", " ", " ", " ", " ", " ", " "},
+            {" ", " ", " ", "B", "B", "B", " ", " ", " "},
+            {"B", " ", "B", " ", "B", " ", " ", " ", " "},
+            {"B", " ", " ", " ", " ", " ", " ", " ", " "},
+            {"B", " ", " ", " ", " ", " ", " ", " ", "B"},
+            {" ", " ", " ", " ", " ", " ", " ", " ", "B"},
+            {" ", " ", " ", "B", "B", "B", " ", " ", "B"},
+            {" ", " ", "T", "B", "E", "B", " ", " ", " "}
     };
 
     void runTheGame() throws Exception
@@ -28,7 +27,10 @@ public class T2_BattleField
      */
     private void printCurrentBattleField()
     {
-        // TODO YOUR CODE HERE
+        for (int i = 0; i < battleField.length; i++)
+        {
+            System.out.println(Arrays.deepToString(battleField[i]));
+        }
     }
 
 
